@@ -1,0 +1,169 @@
+@font-face {
+font-family: glacial;
+ src: url(GlacialIndifference-Regular.otf);
+font-family: six-caps;
+ src: url(SixCaps-Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+/* Makes moving between artists smooth */
+html:hover{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background-color: black;
+}
+
+
+.container{
+  display: flex;
+}
+
+.artistpic{
+    float: left;    
+    vertical-align: top; 
+    object-fit: cover;
+}
+
+
+.flex-container-content {
+    flex-direction: column;
+    justify-content: left;
+    float: right;
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 50%;
+}
+
+.heads{
+    font-family: six-caps;
+    color: #FFFFFF;
+    font-size: 100px;
+    font-stretch: expanded;
+    letter-spacing: 10px;
+}
+
+.flex-container-img{
+  height: 700px;
+
+}
+
+.artist {
+width: 450px;
+color: #FFFFFF;
+text-align: justify;
+line-height: 25px;  
+font-size: 20px;
+font-family: glacial;
+padding-top: 20px;
+}
+
+.artistb {
+  width: 450px;
+  color: black;
+  text-align: justify;
+  line-height: 25px;  
+  font-size: 20px;
+  font-family: glacial;
+  padding-top: 20px;
+  }
+
+.socials{
+    width: 30px;
+    height: 30px;
+    color: black;
+    filter: invert(100%);
+    transition: 0.25s ease-in-out;
+}
+
+.socials:hover {
+  transform: scale(1.4);
+}
+
+.socialsb{
+  width: 30px;
+  height: 30px;
+  color: black;
+  transition: 0.25s ease-in-out;
+}
+
+.socialsb:hover {
+  transform: scale(1.4);
+}
+
+/* Discography */
+
+/* background-attachment makes the image stay in place even when scrolling */
+.discography-container{
+    padding-bottom: 100px;
+    padding-top: 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Backgrounds of each discography is here */
+.discography-container.tswift{
+  background-image: url("bgimg/bgts2.jpg");
+}
+
+.discography-container.mmartinez{
+  background-image: url("bgimg/bgmm2.jpg");
+}
+
+
+.discography-container.tweekend{
+  background-image: url("bgimg/bgtw2.jpg");
+}
+
+
+.discography-container.asupply{
+  background-image: url("bgimg/bgas3.jpg");
+}
+
+
+.discography-container.agrande{
+  background-image: url("bgimg/bgag1.jpg");
+}
+
+.discography-container.kyonezu{
+  background-image: url("bgimg/bgky1.jpg");
+}
+
+/* For the Discography Header */
+.discography{
+    font-family: 'Unbounded', cursive;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+  }
+  /* This is the flex container for the images, used to make the spacing for images for each rows */
+  .disc-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  /* This is the size and width the div carrying the image in the discography */
+  .disc-item{
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    margin-bottom: 75px;
+  }
+/* This is the image size of an album in discography */
+  .disc-item > img{
+    height: 350px;
+    width: 350px;
+  }
+
+/* This is the styling of the text below each album */
+  .disc-item > p {
+    color: white;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    font-size: 1rem;
+  }

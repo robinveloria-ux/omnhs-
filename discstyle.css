@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+body {
+  margin:0;
+  padding:0;
+  background-color: black;
+}
+
+.discography{
+  font-family: 'Unbounded', cursive;
+  color: white;
+  margin-left: 40px;
+  font-size: 60px;
+}
+
+.disc-container{
+  display: flex;
+  border: 2px solid blue;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.disc-item{
+  height: 350px;
+  width: 350px;
+  background-color: white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  margin-bottom: 5px;
+  z-index: 1000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+li {
+  float: right;
+}
+
+li a {
+  font-family: 'Unbounded';
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.25s ease;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+li a:hover {
+  background-color: #111;
+  border-bottom: 2px solid white;
+  transform: scale(1.03);
+}
+

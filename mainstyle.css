@@ -1,0 +1,222 @@
+/*This is for the fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+@font-face {
+  font-family: glacial;
+   src: url(GlacialIndifference-Regular.otf);
+  font-family: six-caps;
+   src: url(SixCaps-Regular.ttf);
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black; 
+    overflow-x: hidden;
+}
+
+/* Image gallery starts here */
+
+.container{
+    display: flex;
+  }
+/* this is the text in the middle of the artist image*/
+   .midtext {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    color: white;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    border-bottom: 1px solid white;
+    transition: 0.25s ease-in-out;
+  }
+  /* this is the size for each artist box in the row */
+  .artist {
+    flex: 1;
+    height: 47vh;
+    /* position relative is used so that the midtext can go in the middle of the image */
+    position: relative;
+  }
+
+  /* this is where the artist image will get bigger */
+  .artist:hover {
+    transition: 0.15s ease;
+    transform: scale(1.04);
+    z-index: 300;
+  }
+
+/* This is the styling of the artists' images , selected a because the img is inside the <a> tag */
+  .artist > a{ 
+    /* Object fit cover is for the image to take over the entire area of the flexbox */
+    object-fit: cover;
+    /* opacity is set to 40% so that the artist's image has a color filter. */
+    opacity: 0.4;
+    transition: 0.25s ease;
+  }
+
+  .artist > img > .midtext{
+    opacity: 1;
+    z-index: 100;
+  }
+
+  /* about section */
+
+  .about-container {
+    color: white;
+    display: flex;
+    height: 100vh;
+  }
+
+  .about-item{
+    width: 50%;
+    padding: 30px;
+  }
+
+
+  .about-item.names{
+    text-align: center;
+    background-image: url(bgimg/bgmm1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 30vh;
+  }
+
+  .about-item.names.left{
+    background-image: url(bgimg/bgtw1.jpg);
+    border-right: 2px solid white;
+  }
+
+  .about-head{
+    padding-bottom: 10px; 
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    font-size: 95px;
+  }
+
+  .about-head-names{
+    padding-bottom: 10px; 
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    font-size:3rem;
+    letter-spacing: 5px;
+    font-family: 'Unbounded', cursive;
+  }
+
+  .devs{
+    /* Display block makes it so that the list goes from top to bottom */
+    display: block;
+  }
+
+  .developer{
+    /* This removes the bullet dots of the list */
+    list-style-type: none;
+    font-family: 'Unbounded', cursive;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  .desc{
+    font-family: 'Unbounded', cursive;
+    font-size: 1.3rem;
+    line-height: 30px;;
+    text-align: justify;
+  }
+
+  /* styling for the Musomatic 2023 area */
+  .ramping {
+    position: absolute;
+    bottom: 0vh;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+  }
+  /* this is the hover filter effect
+  */
+
+  .artist.swift{
+    background-color: #133441;
+  }
+
+  /* This is where the artist's image goes 100% opacity when hovered */
+  .artist.swift:hover > a{
+    opacity: 1;
+  }
+
+  /* This is where the text in the middle of the artist becomes invisible when the box is hovered */
+  .artist.swift:hover > .midtext{
+    opacity: 0;
+    cursor: pointer;
+  }
+/* This is where the filter for an artist ends, the ones below are just the same code, with different colors and are selecting another artists */
+
+  .artist.melanie{
+    background-color: #3C416A;
+  }
+
+  .artist.melanie:hover > a{
+    opacity: 1;
+  }
+
+  .artist.melanie:hover > .midtext{
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .artist.weeknd{
+    background-color: #07262E;
+  }
+
+  .artist.weeknd:hover > a{
+    opacity: 1;
+  }
+
+  .artist:hover > .midtext{
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+  .artist.airsup{
+    background-color: #C0B388;
+  }
+
+  .artist.airsup:hover > a{
+    opacity: 1;
+  }
+
+  .artist.airsup:hover > .midtext{
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .artist.ariana{
+    background-color: #91a0a1;
+  }
+
+  .artist.ariana:hover > a{
+    opacity: 1;
+  }
+
+  .artist.ariana:hover > .midtext{
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .artist.kenshi{
+    background-color: #1C1A1B;
+  }
+
+  .artist.kenshi:hover > a{
+    opacity: 1;
+  }
+
+  .artist.kenshi:hover > .midtext{
+    opacity: 0;
+    cursor: pointer;
+  }
